@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Challenges</title>
+    <style>
+        body{
+            background-color: #1a1a1a;
+            color: #fff;
+            justify-content: center;
+            text-align: center;
+        }
+        .highlight{
+            background-color: yellow;
+            color: #1a1a1a;
+        }
+    </style>
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <h1>lorem ipsum dolor sit amet consectetur adipiscing elit.</h1>
+    <!-- Example 1 : Accessing DOM Elements -->
+     <section id="example-1">
+        <h2>Accessing DOM Elements</h2>
+        <p id="myParagrph">
+            How Bad do you want it ? click the button to change this
+        </p>
+        <button id="changeTextButton">Change Text</button>
+     </section>
+
+     <!-- Example 2 : Traverse The DOM -->
+     <section id="example-2">
+        <h2>Traverse The DOM</h2>
+        <ul id="citiesList">
+            <li>New York</li>
+            <li>Chingo</li>
+            <li>Toronto</li>
+            <li>London</li>
+            <li>Delhi</li>
+        </ul>
+        <button id="highlightFirstCity">
+            highlight First City
+        </button>
+     </section>
+
+     <!-- Example 3 : Manipulating DOM Elements -->
+     <section id="example-3">
+        <h2>Manipulating DOM Elements</h2>
+        <div id="coffeeOrder">order: <span id="coffeeType">Latte</span></div>
+        <button id="changeOrder">Change Order to Espresso</button>
+     </section>
+
+     <!--  Example 4 : Creating and Inserting Elements -->
+     <section id="expamle-4">
+        <h2>Creating and Inserting Elements</h2>
+        <button id="addNewItem">Add a new item to the Shopping list</button>
+        <ul id="ShoppingList">
+            <li>Bread</li>
+            <li>Milk</li>
+        </ul>
+     </section>
+
+     <!-- Example 5 : Removing DOM Elements -->
+     <section id="example-5">
+        <h2>Removing DOM Element</h2>
+        <ul id="taskList">
+            <li>Task 1 : Check your Mails</li>
+            <li>Task 2 : Brush the teeth</li>
+            <li>Task 3 : Take a bath</li>
+            <li>Task 4 : Get Ready</li>
+            <li>Task 5 : Worship of God</li>
+            <li>Task 6 : Have a breakfast</li>
+            <li>Task 7 : Go to office </li>
+            <li>Task 8 : Come back home</li>
+            <li>Task 9 : Get Fresh</li>
+            <li>Task 10 : Read book</li>
+            <li>Task 11 : Scrolling Time</li>
+            <li>Task 12 : Perpare Dinner</li>
+            <li>Task 13 : Have Dinner</li>
+        </ul>
+        <button id="removingLastTask">Remove Last Task</button>
+     </section>
+
+     <!-- Example 6 : Event Handling in the DOM -->
+      <section id="example-6">
+        <h2>Event Handling in the DOM</h2>
+        <button id="clickMeButton">Click me!</button>
+      </section>
+
+      <!-- Example 7 : Event Delegation -->
+       <section id="example-7">
+        <h2>Event Delegation</h2>
+        <ul id="teaList">
+            <li class="teaItem">Green Tea</li>
+            <li class="teaItem">Black tea</li>
+            <li class="teaItem">Oolong Tea</li>
+            <li class="teaItem"> Masala Tea</li>
+        </ul>
+        <p>Click on any tea to select it!</p>
+       </section>
+
+       <!-- Example 8 : Form Handling -->
+        <section id="example-8">
+            <h2>Form Handling </h2>
+            <form id="feedBackForm">
+                <label for="feedBackInput">Your Feedback :</label>
+                <input type="text" id="feedBackInput" placeholder="Enter Feedback"/>
+                <button type="submit">Submit Feedback</button>
+            </form>
+            <p id="feedbackDisplay"></p>
+        </section>
+
+        <!-- Example 9 : Dom Content Loaded -->
+         <section id="example-9">
+            <h2>Dom Content Loaded</h2>
+            <p id="domStatus">Waiting for DOM to load...</p>
+         </section>
+
+         <!-- Example 10 : CSS Classes Manipulation -->
+         <section id="example-9">
+            <h2>CSS Classes Manipulation</h2>
+            <p id="descriptionText"> This text will change color !</p>
+            <button id="toggleHighlight">Toggle highlight</button>
+        </section>
+</body>
+</html>
+<!-- 
+This Boolean attribute is set to indicate to a browser that the script is meant to be executed after the document has been parsed, but before firing DOMContentLoaded.
+Scripts with the defer attribute will prevent the DOMContentLoaded event from firing until the script has loaded and finished evaluating.
+This attribute must not be used if the src attribute is absent (i.e. for inline scripts), in this case it would have no effect.
+-->
