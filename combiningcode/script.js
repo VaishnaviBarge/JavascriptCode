@@ -1,46 +1,47 @@
 /* Example 1 */
 
 document.getElementById("changeTextButton")
-.addEventListener("click", function () {
-let para=document.getElementById("myParagrph");
-para.textContent="Difficult roads often lead to Beautiful Destinations ."
+.addEventListener('click', function () {
+    const paragraph=document.getElementById("myParagrph");
+    paragraph.textContent="Difficult roads ofent lead to beautiful destination"
 });
 
-
-/* Example 2 */
+/* Example 2 */ 
 
 document.getElementById("highlightFirstCity")
-.addEventListener("click", function () {
-    let citiesList=document.getElementById("citiesList");
-    citiesList.firstElementChild.classList.add("highlight");
-});
+.addEventListener('click',function () {
+    let cityList=document.getElementById("citiesList");
+    cityList.firstElementChild.classList.add("highlight")
+})
 
 /* Example 3 */
 
 document.getElementById("changeOrder")
-.addEventListener("click", function (){
-    let Order=document.getElementById("coffeeType")
-    
-    Order.textContent="Espresso";
-    Order.style.accentColor="blue"
-})
+.addEventListener('click',function () {
+        let coffeeType=document.getElementById("coffeeType")
+        
+        coffeeType.textContent="Espresso"
+        coffeeType.style.padding="5px";
+
+    })
+
 
 /* Example 4 */
 
 document.getElementById("addNewItem")
-.addEventListener("click" , function (){
+.addEventListener('click',function () {
     let newItem=document.createElement('li')
     newItem.textContent="Eggs"
-    document.getElementById("ShoppingList").appendChild(newItem)
-});
+    document.getElementById("ShoppingList").appendChild(newItem);
+})
 
 
 /* Example 5 */
 
 document.getElementById("removingLastTask")
-.addEventListener("click", function (){
-    let taskList=document.getElementById("taskList");
-    taskList.lastElementChild.remove();
+.addEventListener('click',function () {
+    let  tasklist=document.getElementById("taskList");
+    tasklist.lastElementChild.remove();
 })
 
 /* Example 6 */
@@ -58,7 +59,7 @@ document.getElementById("teaList")
     if(event.target && event.target.matches('.teaItem')){
         alert("You selectes ",event.target.textContent)
     }
-})
+}); 
 
 /* Example 8 */
 
